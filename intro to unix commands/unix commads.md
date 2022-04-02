@@ -65,7 +65,7 @@ $ ls [options]
 	  => -p creates the dir in the parent format as given eg: dir/dir1/../dirn
 	  => --help
 eg: 
-$ mkdir [options]
+$ mkdir [options] foldername
 ```
 
 ## rmdir => remove a dir
@@ -75,34 +75,37 @@ $ mkdir [options]
 	  => -p  removes the child and parent dir eg: -p parent_dir/dir2
 	  => --help
 eg: 
-$ rmdir [options]
+$ rmdir [options] directory_name
 ```
 
 ## cp => used to copy files and dir from one location to another
 ```sh
-[option] => -i gives you a warning before overwriting
+[option] => -i  #gives you a warning before overwriting
 	 => --backup
-	 => -R copies all files in source
-=> souceFile destinationFile
-=> souceFile1 souceFile2 ... souceFileN destinationDirectory   move files to a dir
-=> * destinationDirectory  (*means all files)
+	 => -R  #copies all files in source
 
-eg: cp [option] source/_path destination/_path
-$ cp 
+	=> souceFile destinationFile
+	=> souceFile1 souceFile2 ... souceFileN destinationDirectory   move files to a dir
+	=> * destinationDirectory  (*means all files)
+
+eg: 
+$ cp [option] source/_path  destination/_path
 ```
 
 ## mv => to move files and dir form source to destination or rename a file or dir
 ```sh
-$ mv 
+$ mv source_filename  new_filename
+
+$ mv source/_path  destination/_path
 ```
 
 ## touch => create empty file if not exist
 ```sh
-  	 => can create multiple file eg: touch file file1 ... fileN
-[option] => --version
+[option] => can create multiple file eg: touch file file1 ... fileN
+	 => --version
 	 => -a to change access time of a file. use <stat filename> to check 
 	 => -m to change modification time of a file
-$ touch 
+$ touch [option] filename
 ```
 
 ## cat => displays content of a file or multiple files
@@ -117,7 +120,7 @@ $  cat
 ## tac => display file content in reverse
 ```sh
 eg: 
-$tac filename
+$ tac filename
 ```
 
 
@@ -143,5 +146,5 @@ $ passwd
 	 => -n display hostname of network node
 	 => -v display kernel version
 	 => -p display type of processor the machine has
-$ uname 
+$ uname [option]
 ```
