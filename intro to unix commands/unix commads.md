@@ -1,15 +1,25 @@
 ## Unix Hello Word! is cd
-Change directory
+Change directory cd => to move to a directory of your choice
 ```sh
-$ cd dirname
-```
-> hello.py
+[options] => directory_name
+	  => path/to/directory 
+	  => ..   #to move to the parent directory of the current working directory 
+	  => /    #to move to the root
 
-+++
-## Display a list of directories and files
-```sh
-$ ls
+$ cd [option or file_path/to the/dir/you want]
 ```
+
+## ls => Display a list of all files and directories in the current working directory 
+```sh
+[options] => --version    #shows the version of the cmmd
+	  => ~      #show a list of files and dir on the home dir on a unix sys
+	  => -a     #show all files and dir
+	  => -d     #list all the dir in the current working dir
+	  => -R     #display the files of subdirectories
+
+$ ls [options]
+```
+
 
 ## echo => used to print strings
 ```sh
@@ -19,7 +29,7 @@ $ ls
 	  => \n   #line break
 
 $ echo -e "your sentence should [option] go here"
-you can also use the * with the echo cmmd to print the files and dir in a dir. 
+you can also use the * with the echo cmmd to print the files and dir in a directory 
 ```
 
 ## history => displays all previously used commands
@@ -32,38 +42,18 @@ $ history
 $ clear 
 ```
 
-## pwd => show the path of the working dir
+## pwd => show the path of the working directory 
 ```sh
 $ pwd 
-```
-
-## cd => to move to a dir of your choice
-```sh
-[options] => dir name
-	  => path to dir
-	  => .. to move to the parent directory of the current working dir
-	  => / to move to the root
-
-$ cd [option or file_path/to the/dir/you want]
-```
-
-## ls => list all files and dir in the working dir
-```sh
-[options] => --veersion  shows the version of the cmmd
-	  => ~ show a list of files and dir on the home dir on a unix sys
-	  => -a show all files and dir
-	  => -d list all the dir in the current working dir
-	  => -R display the files of subdirectories
-
-$ ls [options]
 ```
 
 ## mkdir => to create dir's
 ```sh
 [options] => --version
-	  => -v to return a created message alert
-	  => -p creates the dir in the parent format as given eg: dir/dir1/../dirn
+	  => -v     #to return a created message alert
+	  => -p     #creates the dir in the parent format as given eg: dir/dir1/../dirn
 	  => --help
+
 $ mkdir [options] foldername
 ```
 
@@ -71,7 +61,7 @@ $ mkdir [options] foldername
 ```sh
 [options] => --version
 	  => -v
-	  => -p  removes the child and parent dir eg: -p parent_dir/dir2
+	  => -p     #removes the child and parent dir eg: -p parent_dir/dir2
 	  => --help
 
 $ rmdir [options] directory_name
@@ -79,13 +69,13 @@ $ rmdir [options] directory_name
 
 ## cp => used to copy files and dir from one location to another
 ```sh
-[option] => -i  #gives you a warning before overwriting
+[option] => -i   #gives you a warning before overwriting
 	 => --backup
-	 => -R  #copies all files in source
+	 => -R   #copies all files in source
 
-	=> souceFile destinationFile
-	=> souceFile1 souceFile2 ... souceFileN destinationDirectory   move files to a dir
-	=> * destinationDirectory  (*means all files)
+	=> souceFile  destinationFile
+	=> souceFile1 souceFile2 ...  souceFileN destinationDirectory    #move files to a dir
+	=> *  destinationDirectory      #(*means all files)
 
 $ cp [option] source/_path  destination/_path
 ```
@@ -101,18 +91,19 @@ $ mv source/_path  destination/_path
 ```sh
 [option] => can create multiple file eg: touch file file1 ... fileN
 	 => --version
-	 => -a to change access time of a file. use <stat filename> to check 
-	 => -m to change modification time of a file
+	 => -a    #to change access time of a file. use <stat filename> to check 
+	 => -m    #to change modification time of a file
 $ touch [option] filename
 ```
 
 ## cat => displays content of a file or multiple files
 ```sh
-	=> source_file > destination_file  copy content of one file into another file
-	=> source_file  >> destination_file    append content
+	=> source_file > destination_file    #copy content of one file into another file
+	=> source_file  >> destination_file    #append content
 
-[option] => -n  show the text with the line number
-	 => -E displays a $ at the end of each line
+[option] => -n   #show the text with the line number
+	 => -E   #displays a $ at the end of each line
+
 $  cat [option] filename
 ```
 
@@ -140,10 +131,10 @@ $ passwd
 
 ## uname => shows the machine name
 ```sh
-[option] => -a display all sys info
-	 => -s display kernel name
-	 => -n display hostname of network node
-	 => -v display kernel version
-	 => -p display type of processor the machine has
+[option] => -a   #display all sys info
+	 => -s   #display kernel name
+	 => -n   #display hostname of network node
+	 => -v   #display kernel version
+	 => -p   #display type of processor the machine has
 $ uname [option]
 ```
