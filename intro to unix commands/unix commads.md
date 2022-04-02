@@ -13,11 +13,11 @@ $ ls
 
 ## echo => used to print strings
 ```sh
-[options] => \b  for backspace
-	  => \t for horzontal tab space
-	  => \v for vertical tab space
-	  => \n line break
-eg:
+[options] => \b   #for backspace
+	  => \t   #for horzontal tab space
+	  => \v   #for vertical tab space
+	  => \n   #line break
+
 $ echo -e "your sentence should [option] go here"
 you can also use the * with the echo cmmd to print the files and dir in a dir. 
 ```
@@ -43,7 +43,7 @@ $ pwd
 	  => path to dir
 	  => .. to move to the parent directory of the current working dir
 	  => / to move to the root
-eg: 
+
 $ cd [option or file_path/to the/dir/you want]
 ```
 
@@ -54,7 +54,7 @@ $ cd [option or file_path/to the/dir/you want]
 	  => -a show all files and dir
 	  => -d list all the dir in the current working dir
 	  => -R display the files of subdirectories
-eg: 
+
 $ ls [options]
 ```
 
@@ -64,7 +64,6 @@ $ ls [options]
 	  => -v to return a created message alert
 	  => -p creates the dir in the parent format as given eg: dir/dir1/../dirn
 	  => --help
-eg: 
 $ mkdir [options] foldername
 ```
 
@@ -74,7 +73,7 @@ $ mkdir [options] foldername
 	  => -v
 	  => -p  removes the child and parent dir eg: -p parent_dir/dir2
 	  => --help
-eg: 
+
 $ rmdir [options] directory_name
 ```
 
@@ -88,7 +87,6 @@ $ rmdir [options] directory_name
 	=> souceFile1 souceFile2 ... souceFileN destinationDirectory   move files to a dir
 	=> * destinationDirectory  (*means all files)
 
-eg: 
 $ cp [option] source/_path  destination/_path
 ```
 
@@ -110,11 +108,12 @@ $ touch [option] filename
 
 ## cat => displays content of a file or multiple files
 ```sh
-=> source_file > destination_file  copy content of one file into another file
-=> source_file  >> destination_file    append content
+	=> source_file > destination_file  copy content of one file into another file
+	=> source_file  >> destination_file    append content
+
 [option] => -n  show the text with the line number
 	 => -E displays a $ at the end of each line
-$  cat 
+$  cat [option] filename
 ```
 
 ## tac => display file content in reverse
